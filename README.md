@@ -17,3 +17,7 @@ chmod u+wx ./run
 
 ## Templates
 Examples of configuration templates you can use are found in `templates/`
+
+## Notes
+* When adding an object onto Earth's orbit, when setting the distance from Earth, add the altitude of the object and the Earth's radius together.
+* When calculating for velocity use: `sqrt(G*m/r)`

@@ -20,11 +20,9 @@ int main(int argc, char *argv[]) {
     // read config file
     cout << "Reading data from " + SETTINGS + "..." << '\n';
     auto config = toml::parse_file(SETTINGS);
-    double speed = config["simulation"]["speed"].value_or(1);
-    double years = config["simulation"]["years"].value_or(1);
     double increment = config["simulation"]["increment"].value_or(SECONDS_IN_DAY);
+    double time = config["simulation"]["time"].value_or(SECONDS_IN_DAY * 365); // default = 1 year
     string showLabels = config["simulation"]["showLabels"].value_or("false");
-    increment *= speed;
 
     double bodies = config["simulation"]["celestialBodies"].value_or(0);
 
@@ -49,9 +47,8 @@ int main(int argc, char *argv[]) {
     }
     
     // start the simulation
-    double t = 0; 
-    double end = SECONDS_IN_DAY * 365 * years; // run for 2 years 
-
+    double t = 0; // time is measured in the seconds
+    double end = time;
     // output config data into file
     ofstream file;
     file.open(argv[1]);

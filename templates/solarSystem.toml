@@ -1,7 +1,6 @@
 [simulation]
 increment = 86400
-years = 10
-speed = 5
+time = 62208000
 celestialBodies = 9
 showLabels = "false"  
 

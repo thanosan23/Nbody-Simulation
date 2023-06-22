@@ -1,9 +1,8 @@
 [simulation]
-increment = 86400
-years = 2
-speed = 2.5
-celestialBodies = 2
-showLabels = "true"  
+increment = 60
+time = 540000
+celestialBodies = 3
+showLabels = "true"
 
 [body1]
 name = "Earth"
@@ -16,11 +15,21 @@ zVel = 0
 mass = 5.97e24
 
 [body2]
-name = "Moon"
-x = 4.054e8
+name = "ISS"
+x = 6790029
 y = 0
 z = 0
 xVel = 0
-yVel = 1020
+yVel = 7600
 zVel = 0
-mass = 7.3459e22
+mass = 450000
+
+[body3]
+name = "Settlement"
+x = 7138100
+y = 0
+z = 0
+xVel = 0
+yVel = 7473.72303
+zVel = 0
+mass = 1e8
