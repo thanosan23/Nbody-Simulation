@@ -2,7 +2,7 @@
 increment = 86400
 years = 2
 speed = 2.5
-celestialBodies = 3
+celestialBodies = 2
 showLabels = "true"  
 
 [body1]
