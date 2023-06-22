@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ $# -eq 0 ]; then
+    echo "Output filename must be provided (e.g nbody.dat)."
+    exit 1
+fi
+
+g++ compute/simulate.cpp -std=c++20 -o bin/simulate && ./bin/simulate $1
+python visualize/visualize.py $1

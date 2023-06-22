@@ -1,0 +1,5 @@
+venv/
+bin/
+*.dat
+.vscode
+TODO

@@ -1,0 +1,96 @@
+[simulation]
+increment = 86400
+years = 10
+speed = 5
+celestialBodies = 9
+showLabels = "false"  
+
+[body1]
+name = "Sun"
+x = 0
+y = 0
+z = 0
+xVel = 0
+yVel = 0
+zVel = 0
+mass = 1.989e30
+
+[body2]
+name = "Mercury"
+x = 4.7e10
+y = 0
+z = 0
+xVel = 0
+yVel = 47.36e3
+zVel = 0
+mass = 3.285e23
+
+[body3]
+name = "Venus"
+x = 1.08e11
+y = 0
+z = 0
+xVel = 0
+yVel = 35.02e3
+zVel = 0
+mass = 4.86e24
+
+[body4]
+name = "Earth"
+x = 1.52e11
+y = 0
+z = 0
+xVel = 0
+yVel = 29.8e3
+zVel = 0
+mass = 5.97e24
+
+[body5]
+name = "Mars"
+x = 2.489e11
+y = 0
+z = 0
+xVel = 0
+yVel = 24.1e3
+zVel = 0
+mass = 6.417e23
+
+[body6]
+name = "Jupiter"
+x = 7.417e11
+y = 0
+z = 0
+xVel = 0
+yVel = 13000
+zVel = 0
+mass = 1.898e27
+
+[body7]
+name = "Saturn"
+x = 1.465e12
+y = 0
+z = 0
+xVel = 0
+yVel = 9640
+zVel = 0
+mass = 5.683e26
+
+[body8]
+name = "Uranus"
+x = 2.973e12
+y = 0
+z = 0
+xVel = 0
+yVel = 6800
+zVel = 0
+mass = 8.681e25
+
+[body9]
+name = "Neptune"
+x = 4.474e12
+y = 0
+z = 0
+xVel = 0
+yVel = 5430
+zVel = 0
+mass = 1.024e26

@@ -1,0 +1,26 @@
+[simulation]
+increment = 86400
+years = 2
+speed = 2.5
+celestialBodies = 3
+showLabels = "true"  
+
+[body1]
+name = "Earth"
+x = 0
+y = 0
+z = 0
+xVel = 0
+yVel = 0
+zVel = 0
+mass = 5.97e24
+
+[body2]
+name = "Moon"
+x = 4.054e8
+y = 0
+z = 0
+xVel = 0
+yVel = 1020
+zVel = 0
+mass = 7.3459e22
