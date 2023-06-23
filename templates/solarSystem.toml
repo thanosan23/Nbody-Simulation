@@ -2,7 +2,7 @@
 increment = 86400
 time = 62208000
 celestialBodies = 9
-showLabels = "false"  
+showLabels = "false"
 
 [body1]
 name = "Sun"

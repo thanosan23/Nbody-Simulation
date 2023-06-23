@@ -35,17 +35,17 @@ int main(int argc, char *argv[]) {
         names.push_back(current["name"].value_or(""));
 
         Entity body = Entity(
-            current["x"].value_or(0.0), 
-            current["y"].value_or(0.0), 
-            current["z"].value_or(0.0), 
-            current["xVel"].value_or(0.0), 
-            current["yVel"].value_or(0.0), 
-            current["zVel"].value_or(0.0), 
+            current["x"].value_or(0.0),
+            current["y"].value_or(0.0),
+            current["z"].value_or(0.0),
+            current["xVel"].value_or(0.0),
+            current["yVel"].value_or(0.0),
+            current["zVel"].value_or(0.0),
             current["mass"].value_or(0.0)
         );
         celestialBodies.push_back(body);
     }
-    
+
     // start the simulation
     double t = 0; // time is measured in the seconds
     double end = time;

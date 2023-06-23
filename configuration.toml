@@ -1,7 +1,7 @@
 [simulation]
 increment = 60
 time = 540000
-celestialBodies = 3
+celestialBodies = 4
 showLabels = "true"
 
 [body1]
@@ -33,3 +33,13 @@ xVel = 0
 yVel = 7473.72303
 zVel = 0
 mass = 1e8
+
+[body4]
+name = "Hubble Space Telescope"
+x = 6902152
+y = 0
+z = 0
+xVel = 0
+yVel = 7598
+zVel = 0
+mass = 12246.994
