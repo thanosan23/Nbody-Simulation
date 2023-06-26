@@ -28,7 +28,7 @@ ax = fig.add_subplot(111, projection='3d')
 for i in range(timesteps):
     try:
         for j in range(celestial_bodies):
-            pos = data[i*celestial_bodies+j+offset].split(' ') # add 2 to j because first 2 values are number of bodies and timesteps
+            pos = data[i*celestial_bodies+j+offset].split(' ') # add 3 to j because first 3 values are number of bodies and timesteps
             pos = [ float(x) for x in pos]
             ax.plot(pos[0], pos[1], pos[2], marker='o', markersize=(10 if j == 0 else 6))
             if show_labels:
@@ -39,6 +39,7 @@ for i in range(timesteps):
         ax.set_zlabel('Z')
         ax.set_xlim([minVals[0], maxVals[0]])
         ax.set_ylim([minVals[1], maxVals[1]])
+
         if minVals[2] != maxVals[2]:
             ax.set_zlim([minVals[2], maxVals[2]])
 

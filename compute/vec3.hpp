@@ -19,14 +19,17 @@ struct vec3 {
     }
     ~vec3() {}
 
+    // finds the magnitude of the vector
     double mag() {
         return sqrt(this->x * this->x + this->y * this->y + this->z * this->z);
     }
 
+    // finds the unit vector of the vector
     vec3 unit() {
         return vec3(this->x/this->mag(), this->y/this->mag(), this->z/this->mag());
     }
 
+    /*  OPERATOR OVERLOADS FOR VECTOR3 */
     vec3 operator*(const float &scalar) {
         return vec3(x * scalar, y * scalar, z * scalar);
     }

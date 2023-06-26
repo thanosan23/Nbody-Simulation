@@ -99,7 +99,7 @@ int main(int argc, char *argv[]) {
         }
         t += increment;
     }
-    // output min and max values
+    // output min and max values to allow for good visualization
     file << minPos.x << ' ' << minPos.y << ' ' << minPos.z << '\n';
     file << maxPos.x << ' ' << maxPos.y << ' ' << maxPos.z;
     // close file
